@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: rgb(1, 41, 54); */
+    /* background-color: rgb(39, 40, 40); */
+
+    font-family: 'Poppins';
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+
+/* navigation part starts here  */
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 8vh;
+    width: 100%;
+    position: sticky;
+    z-index: 3;
+    margin: 0;
+    width: auto;
+    top:0;
+    background-color:transparent;
+    transition: all 0.5s ;
+    background-color: rgb(39, 40, 40);
+
+}
+
+.nav-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+
+}
+
+.nav-items a{
+    text-decoration: none;
+    color:white;
+
+}
+
+
+.nav-items li{
+    font-size: 18px;
+    color:white;
+    list-style-type: none;
+}
+
+
+.nav-items a, .nav-items a:link {
+    color:white;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 2px; 
+  }
+  
+ .nav-items a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    background-image: linear-gradient(90deg, rgb(227, 227, 52),rgb(220, 235, 10)); /* underline color */
+    background-size: 0 2px; 
+    background-repeat: no-repeat;
+    background-position: left bottom; /* start position of underline */
+    transition: background-size .3s ease-in; /* duration and timing style of animation */
+  }
+  
+ .nav-items a:hover::before {
+    background-size: 100% 2px;
+    
+  }
+
+.left-nav a{
+    padding: 0%;
+    margin: 0%;
+    color: white;
+    text-decoration: none;
+}
+
+.left-nav a h2{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}       
+
+
+.ham{
+    color: white;
+    font-size: 30px;
+    display: none;
+}
+
+
+
+/* navigation part ends here  */
+
+.join{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 150vh;
+}
+
+.left-join{
+    width: 30%;
+    color: rgb(14, 13, 13);
+    background-color: rgb(80, 238, 164);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+    padding-bottom: 380px;
+}
+
+.left-join h1{
+    color: rgb(143, 8, 184);
+    font-weight: bold;
+}
+
+
+
+.right-join{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* height: 100%; */
+}
+
+.right-join h2{
+    background-color: red;
+    padding: 10px 150px;
+    border-radius: 40px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.right-join form{
+    width: 50vw;
+}
+
+.right-join form fieldset{
+    padding: 10px;
+}
+
+.right-join form fieldset legend{
+    font-size: 20px;
+    color: rgb(47, 0, 255);
+    font-weight: bold;
+}
+
+/* .right-join form input{
+    width: 300px;
+    height: 30px;
+} */
+.gender{
+    width: 680px;
+    height: 60px;
+    margin: 5px;
+}
+
+.gender input{
+    margin-right: 35px;
+}
+
+.email input{
+    width: 695px;
+    height: 40px;
+    margin: 5px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.name input,.caste input,.contact-no input,.address input,.u-name input,.join-year input,.skill input{
+    width: 335px;
+    height: 40px;
+    margin: 5px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.a-info,.u-info{
+    width: 715px;
+}
+
+input::placeholder{
+    color: red;
+    /* font-weight: bold; */
+    /* padding-left:5px ; */
+}
+
+input{
+    padding-left: 5px;
+}
+
+.experience select, .interest select{
+    width: 250px;
+    height: 30px;
+    margin: 5px;
+}
+
+.submit-btn,.reset-btn{
+    padding: 10px 30px;
+    margin: 20px 10px;
+    border-radius: 30px;
+    cursor :pointer;
+    border: 1px solid grey;
+}
+
+.submit-btn{
+    background-color: green;
+    color: white;
+}
+
+.reset-btn{
+    background-color: rgb(241, 81, 32);
+    color: white;
+}
+

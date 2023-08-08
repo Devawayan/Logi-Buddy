@@ -1,0 +1,726 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* background-color: rgb(1, 41, 54); */
+    background-color: rgb(39, 40, 40);
+
+    font-family: 'Poppins';
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+
+/* navigation part starts here  */
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: auto;
+    width: 100%;
+    position: sticky;
+    z-index: 3;
+    margin: 0;
+    width: auto;
+    top:0;
+    background-color:transparent;
+    transition: all 0.5s ;
+
+
+}
+
+.nav-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+
+}
+
+.nav-items a{
+    text-decoration: none;
+    color:white;
+
+}
+
+
+.nav-items li{
+    font-size: 18px;
+    color:white;
+    list-style-type: none;
+}
+
+
+.nav-items a, .nav-items a:link {
+    color:white;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 2px; 
+  }
+  
+ .nav-items a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    background-image: linear-gradient(90deg, rgb(227, 227, 52),rgb(220, 235, 10)); /* underline color */
+    background-size: 0 2px; 
+    background-repeat: no-repeat;
+    background-position: left bottom; /* start position of underline */
+    transition: background-size .3s ease-in; /* duration and timing style of animation */
+  }
+  
+ .nav-items a:hover::before {
+    background-size: 100% 2px;
+    
+  }
+
+.left-nav a{
+    padding: 0%;
+    margin: 0%;
+    color: white;
+    text-decoration: none;
+}
+
+.left-nav a h2{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.ham{
+    color: white;
+    font-size: 30px;
+    display: none;
+}
+
+
+
+/* navigation part ends here  */
+
+
+
+
+/* home part starts here  */
+
+#home-page{
+    height: 90vh;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color:white;
+    padding: 0% 5%;
+    /* background-image: url("/images/home.png"); */
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: cover;
+}
+
+
+.left-home{
+    height: 60%;
+    width: 40%;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: -20px;
+}
+
+.left-home h1{
+    padding: 0%;
+    margin-bottom: 70px;
+    font-size: 80px; 
+    margin-top: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.left-home span{
+    color: rgb(227, 227, 52);
+}
+
+
+
+.left-home h3{
+    padding: 0%;
+    margin: 0%;
+    font-size: 36px;
+    color: rgb(227, 227, 52);
+}
+
+
+.right-home{
+    height: 60%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.right-home .options{
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.right-home .option{
+    height:30px;
+    width:210px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    border:1px solid black;
+    
+}
+
+.right-home a{
+    text-decoration: none;
+    color:black;
+}
+
+.right-home img{
+    height:100%;
+
+}
+
+.right-home h4{
+    padding: 0%;
+    margin: 0%;
+
+}
+.right-home .option:hover{
+    background-color: rgb(227, 227, 52);
+}
+
+/* home part ends here  */
+
+
+.less-than{
+    background-color: transparent;
+    border:0px;
+
+}
+
+
+.greater-than{
+    background-color: transparent;
+    border:0px;
+
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+
+/* social service part-1 starts here  */
+
+#main-service, #main-placement, #main-entrepreneurial{
+    height: 100vh;
+    width: 100%;
+    background-image: url("../images/home-imgs/1A.png");
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+#main-service h3{
+    padding: 0%;
+    margin: 0%;
+}
+
+.top-text{
+    color:  rgb(227, 227, 52);;
+    text-align: center;
+    font-size: 23px;
+    padding-top: 10vh;
+}
+.images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    width:70%;
+    height: 40%;
+}
+
+
+.scrolling, .scrolling1{
+    height: 30vh;
+    width: 20%;
+    background-color: white;
+    cursor: pointer;
+    margin-left:7px;    
+    transition: 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.scrolling a, .scrolling1 a{
+    text-decoration: none;
+    color: black;
+    background-color: transparent;
+}
+.scrolling i, .scrolling1 i{
+    background-color: transparent;
+    font-size: 50px;
+}
+.scrolling-icon{
+    background-color: transparent;
+}
+.scrolling-text{
+    background-color: transparent;
+    margin-top: 15px;
+}
+
+.scrolling1{
+    background-color: rgb(227, 227, 52);
+    color: black;
+    height: 33vh;
+    width: 25%;
+}
+
+
+.btn{
+    background-color: rgb(227, 227, 52);;
+    border-radius: 20px;
+    width: 40vh;
+    height: 7vh;
+    text-align: center;
+    font-size: 18px;
+    border:0px;
+}
+
+.btn a{
+    text-decoration: none;
+    color:black;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+/* social service part-1 ends here  */
+
+
+
+
+
+/* social service part-2 starts here  */
+
+.option-page{
+    height: 100vh;
+    width: auto;
+    background-image: url("../images/home-imgs/1b.png");
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+
+
+
+.services{
+    height:80%;
+    width:70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+}
+
+.row{
+    height:40%;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    color:white;
+}
+
+.row i{
+    cursor: pointer;
+}
+.top-part img{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.item1{
+    height:90%;
+    width:20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.item1 .top-part{
+    height: 70%;
+    width: 100%;
+    border:1px solid red;
+
+}
+
+.item1 .btm-text{
+    height: 30%;
+    font-size: 12px;
+}
+
+.info1{
+    position:absolute;
+    bottom:30%;
+    left:0;
+    right:0;
+    background-color:rgb(227, 227, 52);
+    overflow: hidden;
+    width: 0%;
+    height:70%;
+    transition: .5s ease;
+    transform: translate(-50%);
+    text-align: center;
+    filter: opacity(0.8);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+     
+} 
+
+.info1 i{
+    color:black;
+}
+.item1 .top-part:hover .info1{
+    left:15%;  
+    width: 30%;
+}
+
+
+
+
+
+
+
+
+.item2{
+    height:90%;
+    width:20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.item2 .top-part{
+    height: 70%;
+    width: 100%;
+    border:1px solid red;
+
+}
+
+.item2 .btm-text{
+    height: 30%;
+    font-size: 12px;
+}
+
+.info2{
+    position:absolute;
+    bottom:30%;
+    left:0;
+    right:0;
+    background-color:rgb(227, 227, 52);
+    overflow: hidden;
+    width: 0%;
+    height:70%;
+    transition: .5s ease;
+    transform: translate(-50%);
+    text-align: center;
+    filter: opacity(0.8);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+     
+} 
+
+.info2 i{
+    color:black;
+}
+.item2 .top-part:hover .info2{
+    left:15%;  
+    width: 30%;
+}
+
+
+
+
+.item3{
+    height:90%;
+    width:20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.item3 .top-part{
+    height: 70%;
+    width: 100%;
+    border:1px solid red;
+
+}
+
+.item3 .btm-text{
+    height: 30%;
+    font-size: 12px;
+}
+
+.info3{
+    position:absolute;
+    bottom:30%;
+    left:0;
+    right:0;
+    background-color:rgb(227, 227, 52);
+    overflow: hidden;
+    width: 0%;
+    height:70%;
+    transition: .5s ease;
+    transform: translate(-50%);
+    text-align: center;
+    filter: opacity(0.8);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+     
+} 
+
+.info3 i{
+    color:black;
+}
+.item3 .top-part:hover .info3{
+    left:15%;  
+    width: 30%;
+}
+
+
+
+
+.item4{
+    height:90%;
+    width:20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.item4 .top-part{
+    height: 70%;
+    width: 100%;
+    border:1px solid red;
+
+}
+
+.item4 .btm-text{
+    height: 30%;
+    font-size: 12px;
+}
+
+.info4{
+    position:absolute;
+    bottom:30%;
+    left:0;
+    right:0;
+    background-color:rgb(227, 227, 52);
+    overflow: hidden;
+    width: 0%;
+    height:70%;
+    transition: .5s ease;
+    transform: translate(-50%);
+    text-align: center;
+    filter: opacity(0.8);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+     
+} 
+
+.info4 i{
+    color:black;
+}
+.item4 .top-part:hover .info4{
+    left:15%;  
+    width: 30%;
+}
+
+
+
+
+
+
+.item5{
+    height:90%;
+    width:20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.item5 .top-part{
+    height: 70%;
+    width: 100%;
+    border:1px solid red;
+
+}
+
+.item5 .btm-text{
+    height: 30%;
+    font-size: 12px;
+}
+
+.info5{
+    position:absolute;
+    bottom:30%;
+    left:0;
+    right:0;
+    background-color:rgb(227, 227, 52);
+    overflow: hidden;
+    width: 0%;
+    height:70%;
+    transition: .5s ease;
+    transform: translate(-50%);
+    text-align: center;
+    filter: opacity(0.8);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+     
+} 
+
+.info5 i{
+    color:black;
+}
+.item5 .top-part:hover .info5{
+    left:15%;  
+    width: 30%;
+}
+
+
+
+
+.item6{
+    height:90%;
+    width:20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.item6 .top-part{
+    height: 70%;
+    width: 100%;
+    border:1px solid red;
+
+}
+
+.item6 .btm-text{
+    height: 30%;
+    font-size: 12px;
+}
+
+.info6{
+    position:absolute;
+    bottom:30%;
+    left:0;
+    right:0;
+    background-color:rgb(227, 227, 52);
+    overflow: hidden;
+    width: 0%;
+    height:70%;
+    transition: .5s ease;
+    transform: translate(-50%);
+    text-align: center;
+    filter: opacity(0.8);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+     
+} 
+
+.info6 i{
+    color:black;
+}
+.item6 .top-part:hover .info6{
+    left:15%;  
+    width: 30%;
+}
+
+
+
+
+
+/* social service part-2 ends here  */
+
+
+
+
+/* placement part starts here */
+
+#main-placement{
+    background-image: url("../images/home-imgs/2.png");
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: cover;
+}
+
+/* placement part ends here  */
+
+
+
+/* entrepreneurial part starts here */
+
+#main-entrepreneurial{
+    background-image: url("../images/home-imgs/3.png");
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: cover;
+}
+
+/* entrepreneurial part ends here  */

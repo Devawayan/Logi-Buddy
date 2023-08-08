@@ -1,0 +1,86 @@
+/* navigation part starts here  */
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: auto;
+    /* width: 100%; */
+    position: sticky;
+    z-index: 9;
+    margin: 0;
+    width: auto;
+    top:0;
+    background-color:transparent;
+    transition: all 0.5s ;
+    padding-top: 10px;
+    font-family: 'Poppins';
+
+}
+.login-nav{
+    background: black;
+    height: 8vh;
+}
+
+.nav-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+
+}
+
+.nav-items a{
+    text-decoration: none;
+    color:white;
+
+}
+
+
+.nav-items li{
+    font-size: 18px;
+    color:white;
+    list-style-type: none;
+}
+
+
+.nav-items a, .nav-items a:link {
+    color:white;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 2px; 
+  }
+  
+ .nav-items a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    background-image: linear-gradient(90deg, rgb(227, 227, 52),rgb(220, 235, 10)); /* underline color */
+    background-size: 0 2px; 
+    background-repeat: no-repeat;
+    background-position: left bottom; /* start position of underline */
+    transition: background-size .3s ease-in; /* duration and timing style of animation */
+  }
+  
+ .nav-items a:hover::before {
+    background-size: 100% 2px;
+    
+  }
+
+.left-nav a{
+    padding: 0%;
+    margin: 0%;
+    color: white;
+    text-decoration: none;
+}
+
+.left-nav a h2{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+
+/* navigation part ends here  */

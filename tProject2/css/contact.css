@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.ham{
+    display: none;
+}
+
+.contact{
+    background-image: url(../images/contect-img/contact.png);
+    height: 100vh;
+    width: 100vw;
+    background-size: 100% 100%;
+}
+
+
+.top-text{
+    text-align: center;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.contact-opt{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.call-opt,.msg-opt{
+    background-color: white;
+    width: 30vw;
+    height: 40vh;
+    padding: 10px;
+    box-shadow: 2px 2px 14px 10px  #888888;
+}
+
+.call-icon,.msg-icon,.msg-opt,.call-opt{
+    text-align: center;
+}
+
+.call-icon i,.msg-icon i{
+    font-size: 35px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.issue-btn{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.issue-btn button{
+    background-color: black;
+    color: yellow;
+    padding: 18px 70px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+}
+
+.issue-btn button:hover{
+    background-color: yellow;
+    color: black;
+    transition: 0.2s linear;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .mid-nav{
+        display: none;
+    }
+
+    .ham{
+        color: white;
+        font-size: 30px;
+        display: block;
+    }
+
+    .contact-opt{
+        flex-direction: column;
+    }
+
+    .call-opt,.msg-opt{
+        width: 80vw;
+    }
+
+    .issue-btn{
+        padding: 0 0 20px 0;
+    }
+
+    .top-text{
+        padding: 0 30px;
+    }
+}
+
+
+
+
